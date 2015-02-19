@@ -1,0 +1,47 @@
+#body{
+    background-color: #E3DEDB;
+    display: inline-block;
+    width: 400px;
+    height: 500px;
+    position: fixed;
+    text-align: center;
+    margin-left: 400px;
+    margin-top: 50px;
+    border-radius: 5px;
+    font-family: helvetica, sans-serif;
+    font-size: 16px;
+}
+#listTitle{
+    font-size: 22px;
+    font-weight: bold;
+    padding-top: -10px;
+    text-decoration: underline;
+}
+#form{
+    margin-top: 25px;
+}
+input{
+    font-size: 18px;
+    font-weight: lighter;
+    color: #D2CACA;
+    width: 170px;
+}
+.button{
+    font-size: 18px;
+    border-radius: 5px;
+    color: #ffffff;
+}
+button[type="addButton"]{
+    background-color: green;
+}
+button[type="deleteButton"]{
+    background-color: red;
+}
+#ToDoListTable{
+    border-bottom: 1px solid green;
+    border-left: 1px solid red;
+    margin-left: 10px;
+}
+#selectBox{
+    font-size: 18px;
+}
