@@ -56,9 +56,12 @@ function addList(table) {
     else if(priorityText === "Low"){
        priorityBoxText.style.backgroundColor = "red";
     }
-    else{
+    else if(priorityText === "None"){
        priorityBoxText.style.backgroundColor = "gray";
-    }
+    }else{
+       priorityBoxText.style.backgroundColor = "#E3DEDB";
+       priorityBoxText.style.color = "#E3DEDB";
+   }
 
     addCell.appendChild(cellValue);
     addPriorityLabel.appendChild(priorityBoxText);
