@@ -1,9 +1,9 @@
 /**
  * Created by Administrator on 2/17/15.
  */
-// function to add lists
-var tableArray = new Array();
+/**
 
+// function to add lists
 function addList(table) {
     var table = document.getElementById(table);
     var tableLength = getTableLength(table);
@@ -49,36 +49,24 @@ function addList(table) {
     priorityBoxText.style.fontWeight = "bold";
     priorityBoxText.name = "textLabel";
 
-   if(priorityText === "High"){
-       priorityBoxText.style.backgroundColor = "green";
+    if(priorityText === "High"){
+        priorityBoxText.style.backgroundColor = "green";
     }
     else if(priorityText === "Medium"){
         priorityBoxText.style.backgroundColor = "orange";
     }
     else if(priorityText === "Low"){
-       priorityBoxText.style.backgroundColor = "red";
+        priorityBoxText.style.backgroundColor = "red";
     }
-    else if(priorityText === "None"){
-       priorityBoxText.style.backgroundColor = "gray";
-    }else{
-       priorityBoxText.style.backgroundColor = "#E3DEDB";
-       priorityBoxText.style.color = "#E3DEDB";
-   }
+    else{
+        priorityBoxText.style.backgroundColor = "gray";
+    }
 
     addCell.appendChild(cellValue);
     addPriorityLabel.appendChild(priorityBoxText);
     addCheckBox.appendChild(checkBoxValue);
     sortList();
 
-    var tableObject = {
-        lValue: textBoxInput
-    }
-    tableArray.push(tableObject);
-    //document.write(todo);
-
-    localStorage.setItem("tArray", JSON.stringify(tableArray));
-    var todo = JSON.parse(localStorage.getItem("tArray"));
-    document.write(todo);
 
     document.getElementById("textBox").value = "";
 }
@@ -103,3 +91,5 @@ function deleteList(table) {
         } // end if
     } // end for loop
 } // end deleteList method
+
+**/
