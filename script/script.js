@@ -2,7 +2,6 @@
  * Created by Administrator on 2/17/15.
  */
 // function to add lists
-var tableArray = new Array();
 
 function addList(table) {
     var table = document.getElementById(table);
