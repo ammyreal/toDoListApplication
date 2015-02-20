@@ -69,17 +69,6 @@ function addList(table) {
     addPriorityLabel.appendChild(priorityBoxText);
     addCheckBox.appendChild(checkBoxValue);
     sortList();
-
-    var tableObject = {
-        lValue: textBoxInput
-    }
-    tableArray.push(tableObject);
-    //document.write(todo);
-
-    localStorage.setItem("tArray", JSON.stringify(tableArray));
-    var todo = JSON.parse(localStorage.getItem("tArray"));
-    document.write(todo);
-
     document.getElementById("textBox").value = "";
 }
 
